@@ -58,21 +58,21 @@ def show_recommendations():
         
         with col1:
             st.image(images[0])
-            # st.text(titles[0])
+            st.text(titles[0][0])
             # st.text(authors[0])
         with col2:
             st.image(images[1])
-            # st.text(titles[1])
+            st.text(titles[1][0])
             # st.text(authors[1])
         with col3:           
             st.image(images[2])
-            # st.text(titles[2])
+            st.text(titles[2][0])
             # st.text(authors[2])
         with col4:
             st.image(images[3])
-            # st.text(titles[3])
+            st.text(titles[3][0])
             # st.text(authors[3])
         with col5:
             st.image(images[4])
-            # st.text(titles[4])
+            st.text(titles[4][0])
             # st.text(authors[4])
