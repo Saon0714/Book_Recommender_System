@@ -15,7 +15,9 @@ similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
 def show_top_20():
         st.header("Top 20 Books :")
 
-        book_data_list = list(popular_df["Image-URL-M"])
+        book_data_image = list(popular_df["Image-URL-M"])
+        book_data_title = list(popular_df["Book-Title"])
+
 
  
 
@@ -24,17 +26,22 @@ def show_top_20():
         for i in range(0,20,5):
              
             with col1:
-                st.image( book_data_list[i])
+                st.image( book_data_image[i])
+                st.text(book_data_title[i])
                
             with col2:
-                st.image( book_data_list[i+1])
+                st.image( book_data_image[i+1])
+                st.text(book_data_title[i+1])
                 
             with col3:           
-                st.image( book_data_list[i+2])
+                st.image( book_data_image[i+2])
+                st.text(book_data_title[i+2])
                
             with col4:
-                st.image( book_data_list[i+3])
+                st.image( book_data_image[i+3])
+                st.text(book_data_title[i+3])
               
             with col5:
-                st.image( book_data_list[i+4])
+                st.image( book_data_image[i+4])
+                st.text(book_data_title[i+4])
               
